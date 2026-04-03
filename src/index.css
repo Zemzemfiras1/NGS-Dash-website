@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 100% 99%;
+    --foreground: 243 37% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 243 37% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 243 37% 15%;
+
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 243 37% 15%;
+
+    --muted: 270 20% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 270 20% 96%;
+    --accent-foreground: 243 37% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 20% 92%;
+    --input: 270 20% 92%;
+    --ring: 263 70% 50%;
+
+    --radius: 0.75rem;
+
+    /* NGS Semantic Colors */
+    --ngs-raw: 217 91% 60%;
+    --ngs-processing: 25 95% 53%;
+    --ngs-output: 142 71% 45%;
+    --ngs-error: 0 84% 60%;
+    --ngs-brand: 263 70% 50%;
+    --ngs-brand-pink: 330 81% 60%;
+    --ngs-brand-orange: 25 95% 53%;
+
+    /* Module accent colors */
+    --mod-violet: 263 70% 50%;
+    --mod-amber: 38 92% 50%;
+    --mod-teal: 168 84% 40%;
+    --mod-blue: 217 91% 60%;
+    --mod-pink: 330 81% 60%;
+    --mod-green: 142 71% 45%;
+    --mod-red: 0 72% 51%;
+    --mod-indigo: 239 84% 67%;
+    --mod-emerald: 160 84% 39%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 263 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 20% 96%;
+    --sidebar-accent-foreground: 243 37% 15%;
+    --sidebar-border: 270 20% 92%;
+    --sidebar-ring: 263 70% 50%;
+  }
+
+  .dark {
+    --background: 243 37% 6%;
+    --foreground: 270 20% 98%;
+    --card: 243 37% 8%;
+    --card-foreground: 270 20% 98%;
+    --popover: 243 37% 8%;
+    --popover-foreground: 270 20% 98%;
+    --primary: 263 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 243 30% 16%;
+    --secondary-foreground: 270 20% 98%;
+    --muted: 243 30% 16%;
+    --muted-foreground: 270 10% 65%;
+    --accent: 243 30% 16%;
+    --accent-foreground: 270 20% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 270 20% 98%;
+    --border: 243 30% 16%;
+    --input: 243 30% 16%;
+    --ring: 263 70% 60%;
+    --sidebar-background: 243 37% 8%;
+    --sidebar-foreground: 270 20% 95%;
+    --sidebar-primary: 263 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 243 30% 14%;
+    --sidebar-accent-foreground: 270 20% 95%;
+    --sidebar-border: 243 30% 16%;
+    --sidebar-ring: 263 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-brand {
+    background: linear-gradient(135deg, hsl(var(--ngs-brand)), hsl(var(--ngs-brand-pink)));
+  }
+  .gradient-brand-text {
+    background: linear-gradient(90deg, hsl(var(--ngs-brand)), hsl(var(--ngs-brand-pink)), hsl(var(--ngs-brand-orange)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--ngs-brand-orange)), hsl(var(--ngs-error)));
+  }
+}
