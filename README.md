@@ -148,8 +148,9 @@ src/
 
 This interactive course is built upon the open educational resource **NGS Analysis Toolkit**, an e-book authored by [zemZemTrainingOrg](https://github.com/zemZemTrainingOrg):
 
-- **GitHub Repository:** [zemZemTrainingOrg/NGS-Analysis-Toolkit](https://github.com/zemZemTrainingOrg/NGS-Analysis-Toolkit)
-- **Online E-book:** [NGS Analysis Toolkit — Introduction & Home Page](https://zemzemtrainingorg.github.io/NGS-Analysis-Toolkit/00-Introduction/00-HomePage.html)
+- **GitHub Repository:** [zemZemTrainingOrg/NGS-Analysis-Toolkit](https://github.com/zemZemTrainingOrg/NGS-Toolkit-e-book)
+
+- **Online E-book:** [NGS Analysis Toolkit — Introduction & Home Page](https://zemzemtrainingorg.github.io/NGS-Toolkit-e-book/00-Introduction/00-HomePage.html)
 
 We gratefully acknowledge this foundational resource, which provided the scientific framework and curriculum structure upon which the GenoFlow NGS Learning Laboratory was designed.
 
