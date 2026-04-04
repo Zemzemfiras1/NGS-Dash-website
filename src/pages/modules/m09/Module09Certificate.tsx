@@ -7,6 +7,7 @@ import { MODULES } from '@/data/ngsData';
 import { FINAL_QUESTIONS } from './Module09Assessment';
 import genoflowLogo from '@/assets/genoflow-logo.svg';
 import stampSignature from '@/assets/stamp-signature.jpg';
+import FirasZemSignature from  '@/assets/FZ-signature.jpg'
 
 interface Props { score: number; }
 
@@ -185,8 +186,9 @@ const Module09Certificate = ({ score }: Props) => {
             <div style={{ width: '1px', height: '70px', background: '#e5e7eb', alignSelf: 'center' }} />
 
             <div style={{ textAlign: 'center' }}>
+              <img src={FirasZemSignature} alt="Dr. Firas Signature " style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
               <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
-              <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Dr. Firas Zemzemi</p>
+              <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Dr. Firas Zemzem</p>
               <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>PhD in Bioinformatics</p>
               <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Scientific Advisor</p>
             </div>
