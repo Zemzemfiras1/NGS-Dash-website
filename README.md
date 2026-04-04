@@ -8,6 +8,7 @@
 
 ---
 
+
 ## 🎯 Why GenoFlow?
 
 Bioinformatics is complex. Traditional learning resources are either too theoretical or too fragmented. **GenoFlow** bridges that gap with a structured, visually rich, and interactive curriculum designed for students, clinicians, and researchers entering the world of genomic data analysis.
