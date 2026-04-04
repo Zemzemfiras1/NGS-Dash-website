@@ -7,6 +7,9 @@ import { MODULES } from '@/data/ngsData';
 import { FINAL_QUESTIONS } from './Module09Assessment';
 import genoflowLogo from '@/assets/genoflow-logo.svg';
 import stampSignature from '@/assets/stamp-signature.jpg';
+import NourMathSignature from  '@/assets/NM-signature.jpg'
+import KimCoetSignature from  '@/assets/KC-signature.jpg'
+import SalMaalSignature from  '@/assets/SM-signature.jpg'
 import FirasZemSignature from  '@/assets/FZ-signature.jpg'
 
 interface Props { score: number; }
@@ -164,35 +167,60 @@ const Module09Certificate = ({ score }: Props) => {
           </div>
 
           {/* Bottom section */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'end', gap: '12px', marginBottom: '8px' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: '12px',
+            justifyItems: 'center',
+            alignItems: 'end',
+            marginBottom: '8px',
+          }}>
+            {/* Signature 1 */}
             <div style={{ textAlign: 'center' }}>
-              <img src={stampSignature} alt="Dr. Nour Signature & Stamp" style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
-              <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
-              <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Dr. Mathlouthi Nourelhouda</p>
-              <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>PhD in Molecular Biology</p>
-              <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Founder, GenoFlow Agency</p>
+                <img src={NourMathSignature} alt="Dr. Nour Signature" style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
+                <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
+                <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Dr. Mathlouthi Nourelhouda</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>PhD in Molecular Biology</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Founder, GenoFlow Agency</p>
             </div>
 
-            <div style={{ width: '1px', height: '70px', background: '#e5e7eb', alignSelf: 'center' }} />
-
-            <div style={{ textAlign: 'center', paddingBottom: '4px' }}>
-              <p style={{ color: '#6b7280', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 6px' }}>Issued By</p>
-              <img src={genoflowLogo} alt="GenoFlow" style={{ width: '36px', height: '36px', margin: '0 auto 6px', display: 'block' }} />
-              <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>GenoFlow Agency</p>
-              <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>+216 28 533 434</p>
-              <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>noor@genoflow.bio</p>
-            </div>
-
-            <div style={{ width: '1px', height: '70px', background: '#e5e7eb', alignSelf: 'center' }} />
-
+            {/* Signature 2 */}
             <div style={{ textAlign: 'center' }}>
-              <img src={FirasZemSignature} alt="Dr. Firas Signature " style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
-              <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
-              <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Mr. Firas Zemzem</p>
-              <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>PhD in Bioinformatics</p>
-              <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Scientific Advisor</p>
+                <img src={FirasZemSignature} alt="Dr. Firas Signature" style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
+                <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
+                <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Mr. Firas Zemzem</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>PhD in Bioinformatics</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Scientific Advisor</p>
             </div>
-          </div>
+
+            {/* Signature 3 */}
+            <div style={{ textAlign: 'center' }}>
+                <img src={KimCoetSignature} alt="Mrs. Kimberly Signature" style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
+                <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
+                <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Mrs. Kimberly Christine Coetzer</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>PhD in Genomics</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Scientific Advisor</p>
+            </div>
+
+            {/* Signature 4 */}
+            <div style={{ textAlign: 'center' }}>
+                <img src={SalMaalSignature} alt="Mrs. Salma Signature" style={{ width: '100px', height: 'auto', margin: '0 auto 4px', display: 'block', objectFit: 'contain' }} />
+                <div style={{ width: '120px', height: '1px', background: '#c9a84c', margin: '0 auto 8px' }} />
+                <p style={{ color: '#1a2744', fontSize: '12px', fontWeight: 700, margin: '0 0 2px' }}>Mrs. Salma Maalaoui</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: '0 0 1px' }}>MSc in Genomics</p>
+                <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Scientific Advisor</p>
+            </div>
+
+            {/* Issued by / Contact Info */}
+            <div style={{ gridColumn: '1 / -1', textAlign: 'center', marginTop: '24px', fontFamily: "'Georgia', 'Times New Roman', serif", fontSize: '12px', color: '#1a2740', lineHeight: 1.5, whiteSpace: 'normal', // allow wrapping
+              }}>
+                <span style={{ color: '#6b7280', textTransform: 'uppercase', fontSize: '10px', letterSpacing: '1px', display: 'inline-flex', alignItems: 'center', marginBottom: '4px' }}>
+                  ISSUED BY
+                  <img src={genoflowLogo} alt="GenoFlow" style={{ width: '20px', height: '20px', display: 'inline-block', marginLeft: '8px', marginRight: '8px' }} />
+                </span>
+                <div>GenoFlow Agency | +216 28 533 434 | noor@genoflow.bio</div>
+              </div>
+            </div>
         </div>
 
         {/* Bottom navy bar */}
