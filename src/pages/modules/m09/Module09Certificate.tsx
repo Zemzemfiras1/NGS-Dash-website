@@ -174,6 +174,7 @@ const Module09Certificate = ({ score }: Props) => {
             justifyItems: 'center',
             alignItems: 'end',
             marginBottom: '8px',
+            position: 'relative',
           }}>
             {/* Signature 1 */}
             <div style={{ textAlign: 'center' }}>
@@ -211,9 +212,37 @@ const Module09Certificate = ({ score }: Props) => {
                 <p style={{ color: '#6b7280', fontSize: '10px', margin: 0 }}>Scientific Advisor</p>
             </div>
 
-            {/* Issued by / Contact Info */}
-            <div style={{ gridColumn: '1 / -1', textAlign: 'center', marginTop: '24px', fontFamily: "'Georgia', 'Times New Roman', serif", fontSize: '12px', color: '#1a2740', lineHeight: 1.5, whiteSpace: 'normal', // allow wrapping
-              }}>
+            {/* Issued by / Contact Info with Stamp Overlay */}
+            <div style={{ 
+              gridColumn: '1 / -1', 
+              textAlign: 'center', 
+              marginTop: '24px', 
+              fontFamily: "'Georgia', 'Times New Roman', serif", 
+              fontSize: '12px', 
+              color: '#1a2740', 
+              lineHeight: 1.5, 
+              whiteSpace: 'normal',
+              position: 'relative',
+              paddingBottom: '80px',
+            }}>
+                {/* Stamp Overlay - positioned to left to show contact info */}
+                <img 
+                  src={stampSignature} 
+                  alt="Stamp" 
+                  style={{ 
+                    position: 'absolute',
+                    bottom: '-20px',
+                    left: '25%',
+                    transform: 'translateX(-50%) rotate(-15deg)',
+                    width: '140px',
+                    height: 'auto',
+                    opacity: 0.8,
+                    pointerEvents: 'none',
+                    mixBlendMode: 'multiply',
+                    zIndex: 10,
+                  }} 
+                />
+                
                 <span style={{ color: '#6b7280', textTransform: 'uppercase', fontSize: '10px', letterSpacing: '1px', display: 'inline-flex', alignItems: 'center', marginBottom: '4px' }}>
                   ISSUED BY
                   <img src={genoflowLogo} alt="GenoFlow" style={{ width: '20px', height: '20px', display: 'inline-block', marginLeft: '8px', marginRight: '8px' }} />
