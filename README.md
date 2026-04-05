@@ -1,22 +1,24 @@
-# 🧬 GenoFlow — Interactive NGS Bioinformatics Course
+# Interactive NGS Bioinformatics Course
 
-> Master the complete Next-Generation Sequencing pipeline — from raw reads to clinical reports — through hands-on, interactive learning.
+---
+
+Master the complete Next-Generation Sequencing pipeline from raw reads to clinical reports, through hands-on, interactive learning.
 
 [![Built with React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
 ---
-
-## 🎯 Why GenoFlow?
-
-Bioinformatics is complex. Traditional learning resources are either too theoretical or too fragmented. **GenoFlow** bridges that gap with a structured, visually rich, and interactive curriculum designed for students, clinicians, and researchers entering the world of genomic data analysis.
-
-No prior bioinformatics experience required — just curiosity.
+- This course was developed by [GenoFlow](https://www.linkedin.com/company/genoflowhub/posts/?feedView=all) to transform complex bioinformatics concepts into an accessible, interactive learning experience. 
+- Building on the [NGS-Toolkit-e-book](https://github.com/zemZemTrainingOrg/NGS-Toolkit-e-book) authored by [zemZemTrainingOrg](https://github.com/zemZemTrainingOrg), we added visual explanations, hands-on exercises, and a streamlined interface tailored for learners new to genomic data analysis.
 
 ---
+> Online Version is available on [THIS LINK](https://zemzemtrainingorg.github.io/NGS-Dash-website/)
 
-## 🗺️ Curriculum
+![Home Page](./screenshots/Home%20Page.png)
+
+ 
+## Curriculum
 
 Nine carefully designed modules that mirror the real-world NGS workflow:
 
@@ -32,42 +34,24 @@ Nine carefully designed modules that mirror the real-world NGS workflow:
 | 08 | 🏥 **Clinical Interpretation** | ACMG/AMP guidelines, variant classification, reporting & ethics |
 | 09 | 🏆 **Final Assessment** | Comprehensive evaluation & certificate of completion |
 
----
+--- 
 
-## ✨ Key Features
+## Contributors
 
-- **🗺️ Pipeline Mini-Map** — A persistent visual tracker showing exactly where you are in the NGS workflow
-- **💡 Glossary Chips** — Hover over highlighted terms to instantly learn key concepts in context
-- **🧪 Interactive Quizzes** — Test your understanding at the end of each module with immediate feedback
-- **⚡ XP & Progress System** — Earn experience points as you explore sections and complete modules
-- **🔀 Technical Toggle** — Switch between beginner-friendly and advanced explanations on the fly
-- **📜 Certificate** — Generate a personalized certificate upon completing all nine modules
+### Core Development Team
 
----
+- [Nour El Houda Mathlouthi](https://github.com/nour0810) : Course website design, content adaptation, and interactive module development
 
-## 📸 Screenshots
+### Acknowledgments
 
-### Home Page
-![Home Page](https://github.com/nour0810/ngs-platform/raw/main/screenshots/Home%20Page.png)
-
-### Module Content
-![Sample Types](https://github.com/nour0810/ngs-platform/raw/main/screenshots/Sample%20Types.png)
-![Annotation](https://github.com/nour0810/ngs-platform/raw/main/screenshots/Annotation.png)
-
-### Key Concepts
-![Sequencing by Synthesis Demo](https://github.com/nour0810/ngs-platform/raw/main/screenshots/Sequencing%20by%20senthesis%20Demo.png)
-![Sequencing Platforms Comparison](https://github.com/nour0810/ngs-platform/raw/main/screenshots/Sequencing%20Longs%20vs%20Short%20Read.png)
-![The Sequencing Revolution](https://github.com/nour0810/ngs-platform/raw/main/screenshots/THe%20Sequencing%20Revolution.png)
-![Variants](https://github.com/nour0810/ngs-platform/raw/main/screenshots/Variants.png)
-
-### Certificate
-![Certificate](https://github.com/nour0810/ngs-platform/raw/main/screenshots/NGS_Certificate_User.png)
-
-> 📁 All screenshots are stored in the [`screenshots/`](https://github.com/nour0810/ngs-platform/tree/main/screenshots) folder.
+Special thanks go to:
+- [Firas Zemzem](https://github.com/Zemzemfiras1) : Course design, technical review and validation
+- [Salma Maalaoui](https://github.com/MAASALMA)  : Review and validation
+- [Kimberly Christine Coetzer](https://github.com/Kimmiecc19) : Review and validation
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -78,8 +62,8 @@ Nine carefully designed modules that mirror the real-world NGS workflow:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd ngs-platform-main
+git clone git@github.com:zemZemTrainingOrg/NGS-Dash-website.git
+cd NGS-Dash-website
 
 # Install dependencies
 npm install
@@ -92,14 +76,9 @@ npm run dev
 bun run dev
 ```
 
-The app will be available at `http://localhost:5173`
+Then the app will be available at : 
 
-### Build for Production
-
-```bash
-npm run build
-npm run preview
-```
+> http://localhost:8080/NGS-Dash-website/
 
 ---
 
@@ -123,7 +102,7 @@ src/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -144,17 +123,14 @@ src/
 
 ---
 
-## 📚 Based On
+## Disclaimer
 
-This interactive course is built upon the open educational resource **NGS Analysis Toolkit**, an e-book authored by [zemZemTrainingOrg](https://github.com/zemZemTrainingOrg):
+In developing this course, AI tools were used to:
 
-- **GitHub Repository:** [zemZemTrainingOrg/NGS-Analysis-Toolkit](https://github.com/zemZemTrainingOrg/NGS-Toolkit-e-book)
+- Improving readability, structure, and technical accuracy of explanations.
+- Streamlining code snippets, improving consistency, and adding intuitive comments to make the coding experience more fluid and learner‑friendly.
 
-- **Online E-book:** [NGS Analysis Toolkit — Introduction & Home Page](https://zemzemtrainingorg.github.io/NGS-Toolkit-e-book/00-Introduction/00-HomePage.html)
-
-We gratefully acknowledge this foundational resource, which provided the scientific framework and curriculum structure upon which the GenoFlow NGS Learning Laboratory was designed.
-
----
+> All AI‑assisted outputs were reviewed, tested, and adapted by the course authors to ensure scientific integrity and educational value. The AI served as a co‑piloting tool , not a replacement for human expertise.
 
 ## 📄 License
 
